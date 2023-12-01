@@ -1,0 +1,14 @@
+.selected {
+  border: 5px solid black; /* Style as needed */
+}
+
+.buttons-container {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically (optional) */
+  gap: 10px; /* Add space between buttons */
+}
+
+.buttons-container > div {
+  padding: 5px; /* Add padding around each button */
+}

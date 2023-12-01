@@ -1,0 +1,9 @@
+<div class="app-container">
+  <div class="image-view-container">
+    <app-file-upload (imageLoaded)="setImage($event)" (csvLoaded)="setPoints($event)"></app-file-upload>
+  </div>
+  <app-image-view *ngIf="imageSrc" [mode]="mode" [imageSrc]="imageSrc" [points]="points"
+                  (pointsChanged)=setResult($event)></app-image-view>
+  <app-mode-selection (modeSelected)="onModeSelected($event)"></app-mode-selection>
+  <app-export [points]="result" [fileName]="fileName"></app-export>
+</div>

@@ -1,0 +1,7 @@
+<div class="buttons-container">
+  <div *ngFor="let mode of getModeKeys()">
+    <button [ngClass]="{'selected': mode === selectedMode}" (click)="selectMode(mode)">
+      {{ modes[mode] }}
+    </button>
+  </div>
+</div>

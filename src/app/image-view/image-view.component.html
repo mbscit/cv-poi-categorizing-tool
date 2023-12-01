@@ -1,0 +1,16 @@
+<div class="image-container"
+     *ngIf="imageSrc"
+     (mousedown)="startSelection($event)"
+     (mousemove)="updateSelection($event)"
+     (mouseup)="endSelection()">
+  <img class="image" [src]="imageSrc" alt="Uploaded image">
+  <div *ngFor="let point of points"
+       class="overlay-point"
+       [class.in-status]="point.status === Status.IN"
+       [class.out-status]="point.status === Status.OUT"
+       [style.left.px]="point.x"
+       [style.top.px]="point.y"
+       (click)="changeStatus(point)">
+  </div>
+  <div *ngIf="selecting" class="selection-rectangle" [ngStyle]="getSelectionStyle()"></div>
+</div>

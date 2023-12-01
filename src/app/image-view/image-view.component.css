@@ -1,0 +1,31 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+}
+
+.image {
+  pointer-events: none;
+  user-select: none;
+}
+
+.overlay-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.overlay-point.in-status {
+  background-color: green; /* Color for IN status */
+}
+
+.overlay-point.out-status {
+  background-color: red; /* Color for OUT status */
+}
+
+.selection-rectangle {
+  position: absolute;
+  border: 1px dashed blue;
+  background-color: rgba(0, 0, 255, 0.2);
+}

@@ -1,0 +1,21 @@
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+app-file-upload {
+  display: block;
+}
+.image-view-container {
+  min-height: 100px;
+  display: block;
+}
+app-mode-selection {
+  display: block;
+}
+app-export {
+  margin-top: 30px;
+  display: block;
+}
+
+
