@@ -18,4 +18,8 @@ app-export {
   display: block;
 }
 
-
+.slider-container {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}

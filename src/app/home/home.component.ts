@@ -7,11 +7,12 @@ import {ModeSelectionComponent} from "../../mode-selection/mode-selection.compon
 import {Mode} from "../image-view/mode";
 import {ExportComponent} from "../export/export.component";
 import {FileData} from "../file-data";
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FileUploadComponent, ImageViewComponent, ModeSelectionComponent, ExportComponent],
+  imports: [CommonModule, FileUploadComponent, ImageViewComponent, ModeSelectionComponent, ExportComponent, FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -22,6 +23,7 @@ export class HomeComponent {
   mode: Mode = Mode.FLIP;
   fileName: string = ''
   result: Point[] = [];
+  opacityValue: number = 1;
 
   setImage(fileData: FileData): void {
     this.fileName = fileData.name;

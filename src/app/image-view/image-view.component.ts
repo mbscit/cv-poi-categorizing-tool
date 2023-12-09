@@ -16,6 +16,7 @@ export class ImageViewComponent implements OnInit {
   @Input() imageSrc: string | ArrayBuffer = '';
   @Input() points: Point[] = [];
   @Input() mode: Mode = Mode.FLIP;
+  @Input() pointOpacity: number = 1;
   @Output()
   pointsChanged = new EventEmitter<Point[]>
 

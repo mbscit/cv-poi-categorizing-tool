@@ -1,3 +1,5 @@
 <p>Expected csv format (no header): x <strong>;</strong> y <strong>;</strong> status(can be blank) <strong>;</strong> ...  <strong>;</strong> ...  <strong>;</strong> ... </p>
-<input placeholder="upload image" type="file" (change)="onFileSelected($event)" accept="image/*" />
-<input placeholder="upload csv" type="file" (change)="onCSVSelected($event)" accept=".csv" />
+<label for="imageUpload">Upload image:</label>
+<input id="imageUpload" type="file" (change)="onFileSelected($event)" accept="image/*" />
+<label for="csvUpload">Upload CSV:</label>
+<input id="csvUpload" type="file" (change)="onCSVSelected($event)" accept=".csv" />

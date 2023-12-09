@@ -10,6 +10,7 @@
        [class.out-status]="point.status === Status.OUT"
        [style.left.px]="point.x"
        [style.top.px]="point.y"
+       [ngStyle]="{'opacity': pointOpacity}"
        (click)="changeStatus(point)">
   </div>
   <div *ngIf="selecting" class="selection-rectangle" [ngStyle]="getSelectionStyle()"></div>

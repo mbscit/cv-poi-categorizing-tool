@@ -3,7 +3,10 @@
     <app-file-upload (imageLoaded)="setImage($event)" (csvLoaded)="setPoints($event)"></app-file-upload>
   </div>
   <app-image-view *ngIf="imageSrc" [mode]="mode" [imageSrc]="imageSrc" [points]="points"
-                  (pointsChanged)=setResult($event)></app-image-view>
+                  (pointsChanged)=setResult($event) [pointOpacity]="opacityValue"></app-image-view>
+  <div class="slider-container">
+    <input class="opacity-slider" type="range" min="0" max="1" step="0.1" [(ngModel)]="opacityValue">
+  </div>
   <app-mode-selection (modeSelected)="onModeSelected($event)"></app-mode-selection>
   <app-export [points]="result" [fileName]="fileName"></app-export>
 </div>
