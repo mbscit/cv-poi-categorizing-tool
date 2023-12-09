@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'cv-labler' title`, () => {
+  it(`should have the 'cv-poi-categorizing-tool' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cv-labler');
+    expect(app.title).toEqual('cv-poi-categorizing-tool');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, cv-labler');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, cv-poi-categorizing-tool');
   });
 });
