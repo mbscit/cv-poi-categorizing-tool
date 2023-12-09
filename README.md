@@ -1,4 +1,4 @@
-# CV PIO Categorizing Tool
+# CV POI Categorizing Tool
 
 Tool for categorizing a predefined set of points of interest on an image into two categories (in and out).
 Used to create datasets for the Queue Waiting Time Estimation project (https://github.com/amy-al/cv-queue-time-estimation).
