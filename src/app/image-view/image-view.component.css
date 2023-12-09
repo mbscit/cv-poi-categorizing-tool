@@ -9,19 +9,18 @@
   user-select: none;
 }
 
-.overlay-point {
+.crosshair-icon {
   position: absolute;
-  width: 10px;
-  height: 10px;
   cursor: pointer;
 }
 
-.overlay-point.in-status {
-  background-color: green; /* Color for IN status */
+
+.crosshair-icon.in-status {
+  fill: green; /* Color for IN status */
 }
 
-.overlay-point.out-status {
-  background-color: red; /* Color for OUT status */
+.crosshair-icon.out-status {
+  fill: red; /* Color for OUT status */
 }
 
 .selection-rectangle {
